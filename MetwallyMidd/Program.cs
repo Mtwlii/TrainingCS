@@ -140,31 +140,107 @@
             //    }
             //}
 
-            while (true)
-            {
-                Console.Write("Please enter a word to check : ");
-                string word = Console.ReadLine();
-                bool isPalindrome = false;
-                int length = word.Length;
-                for (int i = 0; i < length / 2; i++)
-                {
-                    if (word[i] != word[length - 1 - i])
-                    {
-                        isPalindrome = true;
-                        break;
-                    }
+            //while (true)
+            //{
+            //    Console.Write("Please enter a word to check : ");
+            //    string word = Console.ReadLine();
+            //    word = word.ToLower();
+            //    bool isPalindrome = false;
+            //    int length = word.Length;
+            //    for (int i = 0; i < length / 2; i++)
+            //    {
+            //        if (word[i] != word[length - 1 - i])
+            //        {
+            //            isPalindrome = true;
+            //            break;
+            //        }
 
-                }
-                if (isPalindrome == false)
-                {
-                    Console.WriteLine($"{word} is a palindrome.");
-                }
-                else
-                {
-                    Console.WriteLine($"{word} is not a palindrome.");
-                }
-            }
+            //    }
+            //    if (isPalindrome == false)
+            //    {
+            //        Console.WriteLine($"{word} is a palindrome.");
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine($"{word} is not a palindrome.");
+            //    }
+            //}
+
+            //int num1 = 5;
+            //int num2 = num1;
+            //num1 = 10;
+            //Console.WriteLine($"num1: {num1}"); // Output: 10
+            //Console.WriteLine($"num2: {num2}"); // Output: 5
+            //Console.WriteLine("-----------------");
+
+            //int[] numbers1 = { 1, 2, 3 };
+            //int[] numbers2 = numbers1;
+            //numbers1[0] = 10;
+            //Console.WriteLine($"numbers1[0]: {numbers1[0]}"); // Output: 10
+            //Console.WriteLine($"numbers2[0]: {numbers2[0]}"); // Output: 10
+
+
+            //int num = 5;
+            //DuplicateValue(num);
+            //Console.WriteLine($"num: {num}"); // Output: 5
+            //int[] numbers = { 1, 2, 3 };
+            //DuplicateArrayValue(numbers);
+            //Console.WriteLine($"numbers[0]: {numbers[0]}"); // Output: 2
+            //Console.WriteLine($"numbers[1]: {numbers[1]}"); // Output: 4
+            //Console.WriteLine($"numbers[2]: {numbers[2]}"); // Output: 6
+            //Console.WriteLine("-----------------");
+
+            //-------------------intersted in this part string format------------------
+
+            //string str = "Hello {0}, My Nmame Is {1}";
+            //Console.WriteLine(str);
+            //str = string.Format(str, "Mohamed", "Metwally");
+            //Console.WriteLine(str);
+            //Student[] students = new Student[10];
+            //Student ahmed = new Student( "Ahmed");
+            //Student mohamed = new("Mohamed", 22, "B");
+            //Student[] students = { ahmed, mohamed };
+            //foreach (var student in students)
+            //{
+            //    Console.WriteLine(student);
+            //Console.WriteLine(ahmed.Name);
+            //}
+
+
+            // Student student = new ();
+            //student.SetName("Metwally Mohamed");
+            //Console.WriteLine(student.GetName());
+
+            //---------------using properties------------------
+            //student.Name = "Metwally Mohamed";
+            //student.Age = 22;
+            //student.Grade = "B";
+            //Console.WriteLine($"Name: {student.Name}, Age: {student.Age}, Grade: {student.Grade}");
+            //Console.WriteLine($"Name: {student.Name}");
+            
+            //Student student = new("Metwally Mohamed");
+            //Console.WriteLine($"Name: {student.Name}");
+
+            //Student student = new Student{ Name = "Metwally Mohamed" };
+            //Console.WriteLine($"Name: {student.Name}");
+
+
+
         }
+
+        //static void DuplicateValue(int number)
+        //{
+        //    number *= 2;
+
+        //}
+        //static void DuplicateArrayValue(int[] number)
+        //{
+        //    for (int i = 0; i < number.Length; i++)
+        //    {
+        //        number[i] *= 2;
+        //    }
+        //}
+
     }
 }
 
